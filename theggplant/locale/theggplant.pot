@@ -1,0 +1,128 @@
+# Translations template for theggplant.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the theggplant project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: theggplant 0.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2015-12-14 19:52-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.1.1\n"
+
+#: theggplant/app/api/kitchens/models.py:16
+msgid "Snack"
+msgstr ""
+
+#: theggplant/app/api/kitchens/models.py:17
+msgid "Sichuan"
+msgstr ""
+
+#: theggplant/app/api/kitchens/models.py:18
+msgid "Dongbei"
+msgstr ""
+
+#: theggplant/app/api/kitchens/models.py:19
+msgid "Xiang"
+msgstr ""
+
+#: theggplant/app/api/kitchens/models.py:20
+msgid "Jiangzhe"
+msgstr ""
+
+#: theggplant/app/api/kitchens/models.py:21
+msgid "Xibei"
+msgstr ""
+
+#: theggplant/app/api/kitchens/models.py:22
+msgid "Lu"
+msgstr ""
+
+#: theggplant/app/api/kitchens/models.py:23
+msgid "Cantonese"
+msgstr ""
+
+#: theggplant/app/api/kitchens/models.py:24
+msgid "Other"
+msgstr ""
+
+#: theggplant/app/api/kitchens/views.py:77
+msgid "The specified owner is not found."
+msgstr ""
+
+#: theggplant/app/api/kitchens/views.py:81
+msgid "One kitchen is only allowed to create for the same user."
+msgstr ""
+
+#: theggplant/app/api/users/views.py:65 theggplant/app/auth/views.py:30
+msgid "The email is already used by another user."
+msgstr ""
+
+#: theggplant/app/auth/forms.py:15
+msgid "Email"
+msgstr ""
+
+#: theggplant/app/auth/forms.py:16 theggplant/app/auth/forms.py:30
+msgid "Email is required."
+msgstr ""
+
+#: theggplant/app/auth/forms.py:17 theggplant/app/auth/forms.py:31
+msgid "Email is not in a wrong format."
+msgstr ""
+
+#: theggplant/app/auth/forms.py:18 theggplant/app/auth/forms.py:32
+msgid "Password"
+msgstr ""
+
+#: theggplant/app/auth/forms.py:19
+msgid "Password is required."
+msgstr ""
+
+#: theggplant/app/auth/forms.py:20
+msgid "The length of password needs to be at least 6."
+msgstr ""
+
+#: theggplant/app/auth/forms.py:21
+msgid "Passwords must match."
+msgstr ""
+
+#: theggplant/app/auth/forms.py:22
+msgid "Confirm Password"
+msgstr ""
+
+#: theggplant/app/auth/forms.py:29
+msgid "Email Address"
+msgstr ""
+
+#: theggplant/app/auth/views.py:58
+msgid "Please enter a correct email and password."
+msgstr ""
+
+#: theggplant/app/auth/templates/login.jinja2:12
+msgid "Login"
+msgstr ""
+
+#: theggplant/app/auth/templates/login.jinja2:13
+#: theggplant/app/auth/templates/signup.jinja2:13
+msgid "Sign Up"
+msgstr ""
+
+#: theggplant/app/templates/base.jinja2:13
+msgid " The Eggplant "
+msgstr ""
+
+#: theggplant/app/upload/views.py:13
+msgid "type is missing in the request"
+msgstr ""
+
+#: theggplant/app/upload/views.py:25
+msgid "Sorry, this file is not allowed"
+msgstr ""
+

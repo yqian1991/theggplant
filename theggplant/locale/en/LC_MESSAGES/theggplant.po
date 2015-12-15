@@ -1,0 +1,92 @@
+# English translations for theeggplant.
+# Copyright (C) 2015 ORGANIZATION
+# This file is distributed under the same license as the theeggplant
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: theeggplant 0.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2015-12-12 11:02-0500\n"
+"PO-Revision-Date: 2015-12-12 01:48-0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.1.1\n"
+
+#: theeggplant/app/api/kitchens/views.py:77
+msgid "The specified owner is not found."
+msgstr ""
+
+#: theeggplant/app/api/kitchens/views.py:81
+msgid "One kitchen is only allowed to create for the same user."
+msgstr ""
+
+#: theeggplant/app/api/users/views.py:65 theeggplant/app/auth/views.py:30
+msgid "The email is already used by another user."
+msgstr "The email is already used by another user."
+
+#: theeggplant/app/auth/forms.py:15
+msgid "Email"
+msgstr ""
+
+#: theeggplant/app/auth/forms.py:16 theeggplant/app/auth/forms.py:30
+msgid "Email is required."
+msgstr ""
+
+#: theeggplant/app/auth/forms.py:17 theeggplant/app/auth/forms.py:31
+msgid "Email is not in a wrong format."
+msgstr ""
+
+#: theeggplant/app/auth/forms.py:18 theeggplant/app/auth/forms.py:32
+msgid "Password"
+msgstr ""
+
+#: theeggplant/app/auth/forms.py:19
+msgid "Password is required."
+msgstr ""
+
+#: theeggplant/app/auth/forms.py:20
+msgid "The length of password needs to be at least 6."
+msgstr ""
+
+#: theeggplant/app/auth/forms.py:21
+msgid "Passwords must match."
+msgstr ""
+
+#: theeggplant/app/auth/forms.py:22
+msgid "Confirm Password"
+msgstr ""
+
+#: theeggplant/app/auth/forms.py:29
+msgid "Email Address"
+msgstr ""
+
+#: theeggplant/app/auth/views.py:58
+msgid "Please enter a correct email and password."
+msgstr ""
+
+#: theeggplant/app/auth/templates/login.jinja2:12
+msgid "Login"
+msgstr ""
+
+#: theeggplant/app/auth/templates/login.jinja2:13
+#: theeggplant/app/auth/templates/signup.jinja2:13
+msgid "Sign Up"
+msgstr ""
+
+#: theeggplant/app/templates/base.jinja2:13
+msgid " The Eggplant "
+msgstr " The Eggplant "
+
+#~ msgid "Group"
+#~ msgstr ""
+
+#~ msgid "email"
+#~ msgstr ""
+
