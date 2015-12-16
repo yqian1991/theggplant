@@ -1,3 +1,4 @@
-*static/
 *.egg-info/
 *.pyc
+.eggs/
+.idea/
