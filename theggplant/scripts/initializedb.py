@@ -19,6 +19,8 @@ from theggplant.app.db import (
 from theggplant.app.api.users.models import User
 from theggplant.app.api.kitchens.models import Kitchen
 from theggplant.app.api.menuitems.models import Menuitem
+from theggplant.app.api.themes.models import Theme
+
 
 
 def usage(argv):
@@ -39,11 +41,18 @@ def main(argv=sys.argv):
     DBSession.configure(bind=engine)
     Base.metadata.create_all(engine)
     with transaction.manager:
-        model = User(email='dak@surveymonkey.com', password='123', group='admin')
+        model = User(email='admin@gmail.com', password='123', group='admin')
         DBSession.add(model)
-        model = User(email='dkuang1980@gmail.com', password='123', group='chef')
+        model = User(email='chef1@gmail.com', password='123', group='chef')
         DBSession.add(model)
-        model = User(email='biscan607@gmail.com', password='123', group='chef')
+        model = User(email='chef2@gmail.com', password='123', group='chef')
+        DBSession.add(model)
+    with transaction.manager:
+        model = Theme(name='Beautiful', css='.name{color: #f00;}', description='Very Beautiful')
+        DBSession.add(model)
+        model = Theme(name='Cool', css='.name{color: #0f0;}', description='Very Cool')
+        DBSession.add(model)
+        model = Theme(name='Dark', css='.name{color: #000;}', description='Very dark')
         DBSession.add(model)
     with transaction.manager:
         for i in range(50):
