@@ -9,6 +9,8 @@ from slugify import slugify
 
 from theggplant.app.db import Base, TimestampMixin, PseudoDelete, Crud, JsonType
 from theggplant.app.api.users.models import User
+from theggplant.app.api.themes.models import Theme
+
 
 def get_kitchen_styles(request):
     _ = request.translate if request else (lambda a: a)
@@ -35,6 +37,9 @@ class Kitchen(TimestampMixin, PseudoDelete, Crud, Base):
     id = sa.Column(sa.Integer, primary_key=True)
     owner_id = sa.Column(sa.Integer, sa.ForeignKey('user.id'))
     owner = sa.orm.relationship(User, backref=sa.orm.backref('kitchens', lazy='dynamic'))
+    theme_id = sa.Column(sa.Integer, sa.ForeignKey('theme.id'), nullable=True)
+    theme = sa.orm.relationship(Theme, backref=sa.orm.backref('kitchens', lazy='dynamic'))
+    name = sa.Column(sa.String(255), nullable=False)
     name = sa.Column(sa.String(255), nullable=False)
     slug = sa.Column(sa.String(255), nullable=False)
     description = sa.Column(sa.Text(), nullable=True)

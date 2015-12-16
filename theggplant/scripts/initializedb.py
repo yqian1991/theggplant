@@ -56,7 +56,7 @@ def main(argv=sys.argv):
         DBSession.add(model)
     with transaction.manager:
         for i in range(50):
-            model = Kitchen(name='Noodle House %s' % i, style='cantonese', thumbnail='thumbnail%s.png' % i, owner_id=random.choice([2,3]), extra={'phone': '1234567'})
+            model = Kitchen(name='Noodle House %s' % i, style='cantonese', thumbnail='thumbnail%s.png' % i, owner_id=random.choice([2,3]), theme_id=random.choice([1, 2,3]), extra={'phone': '1234567'})
             DBSession.add(model)
     with transaction.manager:
         for i in range(50):
