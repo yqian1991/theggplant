@@ -152,7 +152,16 @@ def search_kitchen_menuitems(request):
             'op': '*',
             'value': name
         })
-
+    params.append({
+        'key': 'active',
+        'op': '=',
+        'value': True
+    })
+    params.append({
+        'key': 'deleted',
+        'op': '=',
+        'value': False
+    })
     total = Menuitem.count(params)
     menuitems = Menuitem.search(params,**query)
     if request.user and request.user.group in ['admin', 'chef']:

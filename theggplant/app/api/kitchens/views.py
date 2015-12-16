@@ -99,6 +99,17 @@ def search_kitchens(request):
             'op': '*',
             'value': name
         })
+    if request.user.group != 'admin':
+        params.append({
+            'key': 'active',
+            'op': '=',
+            'value': True
+        })
+        params.append({
+            'key': 'deleted',
+            'op': '=',
+            'value': False
+        })
     total = Kitchen.count(params)
     kitchens = Kitchen.search(params,**post_data)
     if request.user and request.user.group in ['admin', 'chef']:
