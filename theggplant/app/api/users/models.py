@@ -49,6 +49,6 @@ class User(TimestampMixin, PseudoDelete, Crud, Base):
             "group": self.group,
             "deleted": self.deleted,
             "extra": self.extra,
-            "updated_at": self.updated_at,
-            "created_at": self.created_at
+            "updated_at": self.updated_at.strftime('%Y-%m-%d %H:%M:%S'),
+            "created_at": self.created_at.strftime('%Y-%m-%d %H:%M:%S')
         }
