@@ -25,7 +25,7 @@ class Menuitem(TimestampMixin, PseudoDelete, Crud, Base):
     name = sa.Column(sa.String(255), nullable=False)
     slug = sa.Column(sa.String(255), nullable=False)
     description = sa.Column(sa.Text(), nullable=True)
-    active = sa.Column(sa.Boolean(), nullable=False, default=False)
+    active = sa.Column(sa.Boolean(), nullable=False, default=True)
     image = sa.Column(sa.String(1000), nullable=True)
     thumbnail = sa.Column(sa.String(1000), nullable=True)
     cooktime = sa.Column(sa.Integer, nullable=True)
