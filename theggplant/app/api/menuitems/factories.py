@@ -9,7 +9,7 @@ class MenuitemFactory(object):
     __acl__ = [
         (Allow, 'g:admin', ALL_PERMISSIONS),
         (Allow, 'g:admin', 'admin_search'),
-        (Allow, 'chef', 'create'),
+        (Allow, 'g:chef', 'create'),
         (Allow, Everyone, 'search'),
     ]
 
